@@ -1,29 +1,42 @@
 % LaTeX file for resume
 % This file uses the resume document class (res.cls)
 
-\documentclass[margin]{res}
-% the margin option causes section titles to appear to the left of body text
-\textwidth=5.2in % increase textwidth to get smaller right margin
+\documentclass{res}
 %\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
 %\usepackage{newcent}   % uses new century schoolbook postscript font
+\newsectionwidth{0pt}  % So the text is not indented under section headings
+\usepackage{fancyhdr}  % use this package to get a 2 line header
+\renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\setlength{\headsep}{24pt}  % space between header and text
+\setlength{\headheight}{24pt} % allow room for 2-line header
+\pagestyle{fancy}     % set pagestyle for document
+\rhead{ {\it S. Ouertani}\\{\it p. \thepage} } % put text in header (right side)
+\cfoot{}                                     % the foot is empty
+\topmargin=-0.5in % start text higher on the page
 
 \begin{document}
-
+\thispagestyle{empty} % this page has no header
 \name{Slim Ouertani\\[12pt]} % the \\[12pt] adds a blank line after name
-
-\address{{\bf  } \\ ouertani@gmail.com \\ (00966)-(0)-583012381  \\
+\address{ouertani@gmail.com \\ (00966)-(0)-583012381  \\
         Tunisian, June-81, Married \\ 6 Essoubki Street, Soukra 2036, Ariana, Tunisia  }
-\address{{\bf } \\ ouertani.github.io    \\ jroller.com/ouertani \\ twitter.com/ouertani \\ linkedin.com/in/ouertani
-         }
-
+\address{ouertani.github.io \\ jroller.com/ouertani \\ twitter.com/ouertani \\ linkedin.com/in/ouertani }
 
 \begin{resume}
 
-\section{Resume}
-Architect / InfoQ Fr Editor / SOA Trainer \\
-Togaf, PMP, SOA, Spring, Java, Cmmi, Mongo, Scala
+\section{\centerline{Resume}}
+\vspace{8pt} % provide vertical space between section title and contents
 
-\section{Experience}
+\vspace{-5pt} % reduce space between section title and contents
+\begin{center}
+      Architect / InfoQ Fr Editor / SOA Trainer \\
+      Togaf, PMP, SOA, Spring, Java, Cmmi, Mongo, Scala
+ \end{center}
+
+\vspace{0.2in}
+\section{\centerline{Experience}}
+\vspace{8pt}
+
  {\bf Solution Architect,} Al-Elm Information Security, Riyadh \hfill   06-2014
  \begin{itemize} \itemsep -2pt  % reduce space between items
  \item Architecting and Designing enterprise solutions using diverse technology stack
@@ -157,41 +170,43 @@ Togaf, PMP, SOA, Spring, Java, Cmmi, Mongo, Scala
 \end{itemize}
 \end{itemize}
 
+\vspace{0.2in}
+\section{\centerline{CERTIFICATE}}
+\vspace{8pt}
 
-\section{CERTIFICATE}
-{\bf Togaf Certified,} Open Group \hfill   Score 90\%, 06-2015
+{\sl Togaf Certified,} Open Group \hfill   Score 90\%, 06-2015
 \\
-{\bf Togaf Foundation,} Open Group \hfill  Score 95\%, 04-2015
+{\sl Togaf Foundation,} Open Group \hfill  Score 95\%, 04-2015
 \\
-{\bf Project Management Professional,} PMI \hfill  Score 90\%, 03-2015
+{\sl Project Management Professional,} PMI \hfill  Score 90\%, 03-2015
 \\
-{\bf SOA Trainer,} Arcitura \hfill   01-2015
+{\sl SOA Trainer,} Arcitura \hfill   01-2015
 \\
-{\bf SOA Architect,} Arcitura  \hfill  With Honors, 12-2014
+{\sl SOA Architect,} Arcitura  \hfill  With Honors, 12-2014
 \\
-{\bf SOA Professional,} Arcitura \hfill   With Honors, 11-2014
+{\sl SOA Professional,} Arcitura \hfill   With Honors, 11-2014
 \\
-{\bf Introduction to Cmmi for development,}  Cmmi Institute \hfill   09-2014
+{\sl Introduction to Cmmi for development,}  Cmmi Institute \hfill   09-2014
 \\
-{\bf Entrepreneurship for all,} EFFECTUATION, EMLYON \hfill   Score 75,8\%, 01-2014
+{\sl Entrepreneurship for all,} EFFECTUATION, EMLYON \hfill   Score 75,8\%, 01-2014
 \\
-{\bf Principles of Reactive Programming,} Coursera  \hfill   Score 97.5\%, 01-2014
+{\sl Principles of Reactive Programming,} Coursera  \hfill   Score 97.5\%, 01-2014
 \\
-{\bf MongoDB for DBAs,} MongoDB  \hfill   Score 94\%, 11-2013
+{\sl MongoDB for DBAs,} MongoDB  \hfill   Score 94\%, 11-2013
 \\
-{\bf Functional Programming Principles in Scala,} Coursera \hfill  Score 97.9\%, 11-2013
+{\sl Functional Programming Principles in Scala,} Coursera \hfill  Score 97.9\%, 11-2013
   \\
-{\bf MongoDb for java,} MongoDb \hfill   Score 95\%, 10-2013
+{\sl MongoDb for java,} MongoDb \hfill   Score 95\%, 10-2013
 \\
-{\bf Spring Framework 3,} Pivotal  \hfill  Score 94\%, 02-2013
+{\sl Spring Framework 3,} Pivotal  \hfill  Score 94\%, 02-2013
 \\
-{\bf Java 6 Programmer Certified Professional,} Oracle  \hfill   Score 100\%, 08-2012
+{\sl Java 6 Programmer Certified Professional,} Oracle  \hfill   Score 100\%, 08-2012
 \\
-{\bf Team Performance,} STMicroelectronics \hfill   04-2007
+{\sl Team Performance,} STMicroelectronics \hfill   04-2007
 \\
-{\bf English,} British COUNCIL \hfill   4B, 02-2007
+{\sl English,} British COUNCIL \hfill   4B, 02-2007
 \\
-{\bf GL Certified Professional,} GL TRADE \hfill   09-2005
+{\sl GL Certified Professional,} GL TRADE \hfill   09-2005
 \\
 
 \section{Education}
