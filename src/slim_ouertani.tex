@@ -10,13 +10,15 @@
 \usepackage[colorlinks=false]{hyperref}
 \usepackage{lipsum}
 \usepackage{enumitem}
+%\usepackage{lastpage}
 
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \setlength{\headheight}{24pt} % allow room for 2-line header
 \setlength{\headsep}{24pt}  % space between header and text
 \setlength{\headheight}{24pt} % allow room for 2-line header
 \pagestyle{fancy}     % set pagestyle for document
-\rhead{ {\it S. Ouertani}\\{\it p. \thepage} } % put text in header (right side)
+%\rhead{ {\it S. Ouertani}\\{\it p. \thepage of \pageref{LastPage}} }
+\rhead{ {\it S. Ouertani}\\{\it p. \thepage} }
 \cfoot{}                                     % the foot is empty
 \topmargin=-0.5in % start text higher on the page
 
