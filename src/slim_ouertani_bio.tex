@@ -12,6 +12,31 @@
 \usepackage{lipsum}
 \usepackage{enumitem}
 
+\usepackage{float}
+\floatstyle{boxed}
+\restylefloat{figure}
+\usepackage{wrapfig}
+
+
+
+
+\newif\ifpdf
+\ifx\pdfoutput\undefined
+   \pdffalse
+\else
+   \pdfoutput=1
+   \pdftrue
+\fi
+\ifpdf
+   \usepackage{graphicx}
+   \usepackage{epstopdf}
+   \DeclareGraphicsRule{.eps}{pdf}{.pdf}{`epstopdf #1}
+   \pdfcompresslevel=9
+\else
+   \usepackage{graphicx}
+\fi
+
+
 
 \renewcommand{\headrulewidth}{0pt} % suppress line drawn by default by fancyhdr
 \setlength{\headheight}{24pt} % allow room for 2-line header
@@ -27,7 +52,17 @@
 
 \section
 
-Slim Ouertani is solution architect, InfoQ-Fr editor, Cloud & SOA trainer. After his bachelor's degree in computer science, Slim spent more than 10 years between multinational companies as an architect, international agile coach and Head of IT development department. His main role was to build, design and collaborate in the development of enterprise solutions. Slim regularly contributes to InfoQ-FR community where he is an author of many articles and news. In addition to his SOA and Cloud certifications: Trainer, Architect \& Professional, Slim is certified Togaf 9, Archimate 2, PMP, Spring, JAVA, ITIL, CMMi, Mongo...Slim enjoys open source contribution and invite you to follow him on twitter @ouertani.
+
+
+
+Slim Ouertani is solution architect, InfoQ-Fr editor, Cloud and SOA trainer.
+After his bachelor's degree in computer science, Slim spent over than 10 years in multinational companies such as Orange, Sagem and STMicroelectronics as an architect, international agile coach and Head of IT development department.
+His main role was to build, design and collaborate in the development of enterprise solutions.
+Slim regularly contributes to InfoQ-FR community where he is the author of many articles and news.
+He's broad certified as in addition to his SOA and Cloud certifications: Trainer \& Architect, Slim  holds multiple certifications including Togaf 9, Archimate 2, PMP, ITIL, CMMi, Mongo, Spring, JAVA, SCALA and reactive programming...
+Trained as an architect, Slim specializes in enterprise Java development, functional programming focusing on highly scalable applications and now expanding his experience to cloud computing.
+Slim enjoys open source contribution and invite you to follow him on twitter @ouertani.
+
 
 \end{resume}
 \end{document}
