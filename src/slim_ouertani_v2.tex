@@ -1,0 +1,582 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+\usepackage{multicol}
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+
+\thispagestyle{empty} % this page has no header
+\maintitle{Slim Ouertani}{June-81, Tunisian}{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\href{mailto:ouertani.at.gmail.dot.com}{ouertani\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{(00966)-(0)-583012381} \sbull
+{ Riyadh} \emph{(Saudi Arabia)}
+
+\href{http://linkedin.com/in/ouertani }{linkedin.com/in/ouertani }\sbull
+\href{http://ouertani.github.io }{ouertani.github.io }\sbull
+\href{http://jroller.com/ouertani }{jroller.com/ouertani }\sbull
+\href{http://twitter.com/ouertani }{twitter.com/ouertani }
+
+
+\begin{center}
+      \Large Architect, InfoQ Fr Editor, Cloud \& SOA Trainer \\
+      \large Togaf, Archimate, PMP, SOA, Cloud, Spring, Java, Cmmi, ITIL, Mongo, Scala
+ \end{center}
+
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\hspace{0.5cm} Slim Ouertani is solution architect, InfoQ-Fr editor, Cloud and SOA trainer.
+After his bachelor's degree in computer science, Slim spent over than 10 years in multinational companies such as Orange, Sagem and STMicroelectronics as architect, international agile coach and Head of IT development department.
+His main role was to build, design and collaborate in the development of enterprise solutions.
+
+\hspace{0.5cm} Slim regularly contributes to InfoQ-FR community where he is the author of many articles and news.
+He's broad certified as in addition to his SOA and Cloud certifications: Trainer \& Architect, Slim  holds multiple certifications including Togaf 9, Archimate 2, PMP, ITIL, CMMi, Mongo, Spring, JAVA, SCALA and reactive programming...
+
+\hspace{0.5cm} Trained as an architect, Slim specializes in enterprise Java development, functional programming focusing on highly scalable applications and now expanding his experience to cloud computing.
+
+\hspace{0.5cm} Slim enjoys open source contribution and invite you to follow him on twitter @ouertani.
+
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.elm.sa/en/Pages/default.aspx}{Al-Elm Information Security}}
+  {\textsc{Riyadh, SAUDI ARABIA}} {%
+  \headedsubsection
+    {Solution Architect}
+    {06-2014 -- present}
+    {\begin{itemize} \itemsep -2pt  % reduce space between items
+ \item Architecting and Designing enterprise solutions using diverse technology stack
+ \item Work with peers to conduct Solution Architecture Reviews for a broad set of projects
+ \item  Review and provide input into functional \& non-functional requirements
+ \item  Provide consulting and conduct reviews through the development lifecycle
+ \item  Defining the Architecture and guiding the use of various tools, technologies and techniques in the realization of that Architecture
+ \item  Create and maintain a set of standard practices, patterns and anti-patterns and ensure the appropriate usage of that.
+ \end{itemize}}
+}
+
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{http://www.sofrecom.com/en}{Sofrecom} (Orange FT Group)}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Software Architect, International Agile Coach}
+    {03-2013 -- 06-2014}
+    {
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Manage and direct virtual distributed teams
+\item Make or Buy Analysis
+\item Establish regular meetings to review technical designs and provide mentoring and guidance
+\item Mentor development teams on different architecture and design paradigms or practices
+\item Maintain a knowledge base of emerging technologies and products
+\item Scrum Master,Enterprise Architect, Apache Camel, Spring
+\item CXF, Spring Batch, Atomikos, ActiveMq, Jonas, hibernate
+\end{itemize}
+}}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{http://www.zenika.com/}{Zenika} }
+  {\textsc{Paris, FRANCE}} {%
+  \headedsubsection
+    {JEE Architect}
+    {12-2012 -- 03-2013}
+    {
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Client : Bouygues Telecom
+\item Project : Home Automation (2 months)
+\item BBox embedded automation solution communicating with centralized system
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Embedded: OSGI, REST server/client, Raspberry pi
+\item Server : Fuse ESB, CXF, Camel, Spring, Jax-Rs, Osgi, Maven
+\end{itemize}
+
+\item Client : SwissPost
+\item Project : Image Plus (2 months)
+\item Online outsourcing solution for picture processing.
+
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Scrum, Kanban, Jenkies, Git, Cloudbees, Maven
+\item MVP, Spring 3.1, GWT 2.5, JPA 2
+\end{itemize}
+
+\end{itemize}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{http://www.orange.tn/}{Orange} }
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    { Head of Development and Tools Manager}
+    {01-2010 -- 11-2012}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+
+\item JEE 6, MDB, JPA , Scala, Wicket, Play, J2ME, Spring ROO, WS, Glassfish,Talend, Birt
+
+\item Development and implementation of a web service platform :
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item JEE 6, SCALA, EJB 3.1, JAX-WS, Oracle, JPA
+\item IN/AIR, BSCS/CMS/Data Charging/CRM/IVR/USSD
+\end{itemize}
+\item Development of the “after sales service” solution: Play 1.2.x, groovy, jquery
+\item Launch of BI project: Talend, Birt, Oracle
+\item Bulk SMS: Wicket, JEE 6, JPA, Postgres
+\item Unbarring SMS: J2ME, JAX-WS, MDB, JPA
+\item Different applications: inter systems and synchronization platforms, web application...
+\end{itemize}}}
+}
+
+
+\headedsection
+  {\href{http://www.sagemcom.com/}{Sagem Software \& Technologies}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Solution Architect}
+    {06-2009 -- 01-2010}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Architecture design and integration of a communication server and administration of remote gateways.
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item JEE, JMS, Spring, GWT, AndroMda, Hibernate, SMS
+\item Jboss, ActiveMq, MDA
+\end{itemize}
+\end{itemize}}}
+
+  \headedsubsection
+    {Solution Architect}
+    {03-2008 -- 06-2009}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Modular OSGi Server architecture under Linux platform responsible for controlling and interacting with electricity counters in order to retrieve statistics and have data storing/manipulation via different technologies and frameworks
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item OSGI, SCA, Spring DM, JAX-WS, JPA, GPRS, GSM/DATA, SMS, SNMP4j, Hessian, Ftp, Equinox, JETTY, POSTGRESQL
+\item DISTRIBUTED COMPUTING, Cryptography
+\end{itemize}
+\end{itemize}}}
+
+  \headedsubsection
+    {Solution Architect \& Team Leader}
+    {12-2007 -- 03-2008}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Designing an SOA architecture and implementation of an Intranet service for human resources using liferay portal.
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item JEE5, EJB3, JAX-WS, JSF, PORTLET, JPA, SOA
+\item GLASSFISH V2, TOMCAT6, LIFERAY 4.4, POSTGRESQL
+\end{itemize}
+\end{itemize}}}
+}
+
+\headedsection
+  {\href{http://www.st.com/}{STMicroelectronics}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Coordinator}
+    {02-2006 -- 12-2007}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Implementing Intranet tools used for monitoring the evolution of validation campaigns.
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item J2EE, JSF, Hibernate/JPA, JAXB/JAXP, Design Pattern
+\item TOMCAT 5.5, POSTGRESQL
+\end{itemize}
+\end{itemize}}}
+
+  \headedsubsection
+    {Developer}
+    {12-2005 -- 02-2006}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Validating processors and compilers under different platforms.
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Linux, Solaris, Cygwin, Mingwin, Perl ,Shell
+\end{itemize}
+\end{itemize}}}
+}
+
+\headedsection
+  {\href{https://www.sungard.com}{ GL TRADE}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Developer  \& designer}
+    {08-2005 -- 12-2005}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item GL TACTICS: A trader module enhancing the efficiency of the negotiating teams giving them the possibility to customize the implementation strategies and accelerate the decision process.
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item C++, Design Pattern
+\end{itemize}
+\end{itemize}}}
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/ouertani}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Certificate}
+
+
+\headedsection
+  {{\sl \textit {Archimate Certified},} Open Group}
+  {\textsc{Score 82\%, 02-2016}}
+
+\headedsection
+  {{\sl \textit {Archimate Foundation},} Open Group}
+  {\textsc{Score 97\%, 02-2016}}
+  
+\headedsection
+  {{\sl \textit {Cloud Trainer},} Arcitura}
+  {\textsc{ 10-2015}}  
+
+\headedsection
+  {{\sl \textit {Cloud Architect},} Arcitura }
+  {\textsc{With Honors, 10-2015}} 
+
+\headedsection
+  {{\sl \textit {Cloud Professional},} Arcitura }
+  {\textsc{With Honors, 09-2015}} 
+
+
+\headedsection
+  {{\sl \textit {Togaf Certified},} Open Group}
+  {\textsc{Score 90\%, 06-2015}} 
+
+\headedsection
+  {\sl \textit{ITIL Foundation}, Exin}
+  {\textsc{Score 95\%, 06-2015}}   
+  
+\headedsection
+  {{\sl \textit {Togaf Foundation},} Open Group}
+  {\textsc{Score 95\%, 04-2015}}     
+
+\headedsection
+  {{\sl \textit {Project Management Professional},} PMI}
+  {\textsc{03-2015}} 
+
+\headedsection
+  {{\sl \textit {SOA Trainer},} Arcitura}
+  {\textsc{01-2015}}  
+
+\headedsection
+  {{\sl \textit {SOA Architect},} Arcitura}
+  {\textsc{With Honors, 12-2014}}  
+
+\headedsection
+  {{\sl \textit {SOA Professional},} Arcitura}
+  {\textsc{With Honors, 11-2014}} 
+ 
+
+\headedsection
+  {{\sl \textit {Introduction to Cmmi for development},}  Cmmi Institute}
+  {\textsc{ 09-2014}} 
+  
+\headedsection
+  {{\sl \textit {Entrepreneurship for all},} EFFECTUATION, EMLYON}
+  {\textsc{Score 75,8\%, 01-2014}} 
+
+\headedsection
+  {{\sl \textit {Principles of Reactive Programming},} Coursera}
+  {\textsc{Score 97.5\%, 01-2014}} 
+
+\headedsection
+  {{\sl \textit {MongoDB for DBAs},} MongoDB}
+  {\textsc{Score 94\%, 11-2013}} 
+  
+\headedsection
+  {{\sl \textit {MongoDb for java},} MongoDb}
+  {\textsc{Score 95\%, 10-2013}} 
+  
+\headedsection
+  {{\sl \textit {Spring Framework 3},} Pivotal}
+  {\textsc{Score 94\%, 02-2013}} 
+  
+\headedsection
+  {{\sl \textit {Java 6 Programmer Certified Professional},} Oracle}
+  {\textsc{Score 100\%, 08-2012}} 
+  
+\headedsection
+  {{\sl \textit {Team Performance},} STMicroelectronics}
+  {\textsc{04-2007}} 
+
+\headedsection
+  {{\sl \textit {English},} British Council}
+  {\textsc{4B, 02-2007}} 
+  
+\headedsection
+  {{\sl \textit {GL Certified Professional},} GL TRADE}
+  {\textsc{09-2005}} 
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Education}
+
+
+\headedsection
+  {\href{http://www.ensi.rnu.tn/}{ National School of Computer Science}\acr{ENSI}}
+  {\textsc{Tunis,Tunisia}} {%
+  \headedsubsection
+    {Graduation Project in Computer Engineering}
+    {2005}{}
+}
+
+\headedsection
+ {\href{http://www.ensi.rnu.tn/}{ National School of Computer Science}\acr{ENSI}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Bachelor Degree in Computer Science}
+    {2002 -- 2005} {}
+}
+
+
+
+\headedsection
+  {\href{http://www.ipeit.rnu.tn/en}{Tunis Preparatory Institute for Engineering Studies}\acr{IPEIT}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Preparatory Courses (Math Sup, Math Spe)}
+    {2000 -- 2002} {}
+}
+
+\headedsection
+  {{Hannibal}}
+  {\textsc{Ariana, Tunisia}} {%
+  \headedsubsection
+    { \textnormal{~(Pre-university Secondary Education)}}
+    {1994 -- 2000} {}
+}
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Other Activities}
+\begin{multicols}{2}
+
+{\bf  InfoQ Fr Editor} \\
+http://www.infoq.com/fr/author/Slim-Ouertani 
+
+\columnbreak
+
+{\bf  OPEN SOURCE } \\
+https://github.com/ouertani  \\
+http://www.reactive-streams.org
+
+\end{multicols}
+
+\begin{multicols}{2}
+{\bf  BLOGGGING } \\                                   
+http://java.dzone.com/users/slim.ouertani  \\          
+http://ouertani.github.io      \\                     
+http://www.jroller.com/ouertani  \\                    
+http://twitter.com/ouertani                         
+
+\columnbreak
+{\bf INTERVIEW } \\
+{\sl Paremus, SCA with OSGI,} {\bf David Savage}  \\
+http://www.prosyst.com/ \\
+07.02.2009 \\
+http://www.jroller.com/ouertani/entry/interview\_paremus\_sca\_with\_osgi
+\end{multicols}
+
+
+\begin{multicols}{2}
+{\bf  MAGAZINE} \\
+{\sl From Microservices to SOA} -  20.07.2015 \\
+Service Technology Magazine     -  Issue XCI \\
+http://servicetechmag.com/I91/0715-1  \\
+
+\columnbreak
+
+{\bf STAMPLE } \\
+https://stample.co\\
+Scala, Akka, Play \\
+ElasticSearch, MongoDb, Amazon S3, GreenCloud
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Computer Skills}
+
+\vspace{8pt}
+   \begin{tabular}{l p{6in}}
+    \underline{Design} & Functional programming, EA, UML, Design Pattern, MVC,  MDA, OO, MVP \\
+    \underline{Architecture} & Microservices, Reactive, N-tiers, SOA, SCA, Actor \\
+    \underline{Cloud} & CloudBees, Heroku, App Engine, Amazon S3, GreenCloud \\
+    \underline{Agile} & Scrum, Kanban \\
+    \underline{Web Service} & Metro, JAX-WS,CXF,JAX-RS,Hessian, Rest, Axis \\
+    \underline{Languages} & SCALA, Java/JEE/OSGI, C/C++/C\#, ADA, COBOL,... \\
+    \underline{Web} & PLAY, GWT, Vert.x, WICKET, JSF, PORTLET, JSP, SERVLET, APPLET, HTML\\
+    \underline{XML} & XML, XSL,XSD, JAXP, JAXB, Stax, SAX, DOM, SCALA XML\\
+    \underline{Database} & PostgresSQL, MySQL, Oracle, MongoDb\\
+    \underline{Persistence} & JPA, Hibernate, Toplink, EclipseLink, Slick\\
+    \underline{Containers} & Glassfish V3, Tomcat 5/6/7, Equinox, JBOSS AS, Jonas 4, OC4J\\
+    \underline{Framework} & Spring, Spring DM, Liferay 4.4, Fuse ESB, Camel, Spring Batch, ElasticSearch\\
+    \underline{OS} & UNIX/LINUX, Mac OS, Windows XP, Windows NT, SOLARIS\\
+    \underline{IDE} & Netbeans, Eclipse, Idea, JDeveloper 10g\\
+    \underline{Management} & IceScrum, Bugzilla, Trello\\
+    \underline{Build tools} & Gradle, Maven, Sbt, Javac, Scalac, Ant\\
+    \underline{Version control} & Git, Subversion, Perforce, CVS, Jazz\\
+    \underline{Collaboration} & Trello, Slack, Github, Codex, Wiki, Sharepoint\\
+ \end{tabular}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Training}
+
+\headedsection
+  {\href{http://www.pmi.org/}{Project Management Professional, }\acr{PMP}}
+  {\textsc{11.2014}} 
+  
+\headedsection
+  {\href{www.sagem.com}{ OSGi design pattern :   White board \& Extender }}
+  {\textsc{08.2009}}{%
+  \headedsubsection
+    {{\bf By}: Slim Ouertani}
+    {}
+    {}}
+}  
+
+\headedsection
+  {\href{http://newton.codecauldron.org}{ SCA architecture with Newton}}
+  {\textsc{01.2009}}{%
+  \headedsubsection
+    {{\bf By}: David Savage \& Mike Francis}
+    {}
+    {}
+}
+
+\headedsection
+  {\href{http://www.prosyst.com/}{ OSGi, architecture and environment}}
+  {\textsc{05.2008}}{%
+  \headedsubsection
+    {{\bf By}: Roman Roelofsen}
+    {}
+    {}
+}
+
+
+\spacedhrule{0em}{-0.4em}
+\roottitle{Publications}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/for-comprehension-sauce-java-8}{ Pour le fun : for-comprehension \`a la sauce Java 8}}
+  {\textsc{23.07.2015}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/vrais-faux-jumeaux}{ Vrais ou Faux Jumeaux ?}}
+  {\textsc{25.11.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/curryfication-java}{ Curryfication Java : methods \& fonctions}}
+  {\textsc{29.07.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/lenses-en-java}{ Des Lenses en Java ?}}
+  {\textsc{30.06.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/compilateur-java}{ Barboter dans le compilateur Java}}
+  {\textsc{02.06.2014}}
+  
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/trampoline-java8}{ Mon Trampoline avec Java 8}}
+  {\textsc{18.04.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/demystifier-iteratees-java}{ Démystifier les iteratees avec Java}}
+  {\textsc{01.11.2013}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/trio-akka-spring-scala}{ Le Trio : Akka, Spring et Scala}}
+  {\textsc{16.10.2013}}
+
+
+\headedsection
+  {\href{http://blog.zenika.com/index.php?post/2013/02/12/Rest-with-Scala-and-Vert.x}{ Rest with Scala and Vert.x}}
+  {\textsc{18.02.2013}}
+
+\headedsection
+  {\href{http://blog.zenika.com/index.php?post/2013/02/11/fun-with-scala-and-vert-x}{ Fun with Scala and Vert.x}}
+  {\textsc{11.02.2013}}
+
+\headedsection
+  {\href{http://java.dzone.com/articles/getting-started-play-21-scala}{Getting Started with Play 2.1 , Scala 2.10 and Slick 0.11.1}}
+  {\textsc{01.11.2012}}
+  
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/ouertani}{Linked-in profile} for a more complete list of publications since 2008.}
+\end{center}
+
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{News}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/news/2015/05/reactive-streams-capped-collecti}{MongoDB : la magie des Reactive-Streams avec les Capped Collections}}
+  {\textsc{21.05.2015}}   
+
+\headedsection
+  {\href{http://www.infoq.com/fr/news/2015/05/api-reactive-streams-1-0}{Publication de l’API Reactive Streams 1.0}}
+  {\textsc{07.05.2015}} 
+
+\headedsection
+  {\href{http://www.infoq.com/fr/news/2015/03/docker-vs-serveurs-app-java}{Docker, le dernier clou dans le cercueil des serveurs d’applications Java ?}}
+  {\textsc{19.03.2015}} 
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Languages}
+\headedsection
+  {\sl Arabic, French English} 
+  {\textsc{Written \& Spoken}} 
+
+
+
+\end{document}
