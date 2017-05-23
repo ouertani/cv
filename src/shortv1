@@ -77,7 +77,7 @@
 
 \vspace{-1.3em}  % some vertical spacing
 \begin{multicols}{2}  % open a multicolumn environment
-\hspace{0.5cm} Slim Ouertani is solution architect, InfoQ-Fr editor, Big Data Science, Cloud and SOA Certified trainer , founder and organizer of Riyadh IT Architecture Meetup.
+\hspace{0.5cm} Slim Ouertani is enterprise and solution architect, InfoQ-Fr editor, Big Data Science, Cloud and SOA Certified trainer , founder and organizer of Riyadh IT Architecture Meetup.
 After his engineer's degree in computer science, Slim spent over than 10 years in multinational companies such as Orange, Sagem and STMicroelectronics as architect, international agile coach and Head of IT development department.
 His main role was to build, design and collaborate in the development of enterprise solutions.
 
@@ -100,7 +100,7 @@ He's broad certified as in addition to his SOA, Cloud and Big Data Science certi
   {\textsc{Riyadh, SAUDI ARABIA}} 
   {%
     \headedsubsection
-    {VP of IT Development  Enterprise Architecture}
+    {VP of IT Development \& Enterprise Architecture}
     {03-2017 -- present}
     
   }
@@ -137,7 +137,7 @@ He's broad certified as in addition to his SOA, Cloud and Big Data Science certi
   {\href{http://www.orange.tn/}{Orange} }
   {\textsc{Tunis, Tunisia}} {%
   \headedsubsection
-    { Head of Development and Tools Manager}
+    { Head of Development \& Tools Manager}
     {01-2010 -- 11-2012}
     
 }
