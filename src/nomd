@@ -1,0 +1,602 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[10pt,a4paper]{article}
+\usepackage[utf8]{inputenc}
+% Set the page margins.
+\usepackage[a4paper,margin=0.75in]{geometry}
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+\usepackage{multicol}
+
+\usepackage{fancyhdr}
+ 
+\pagestyle{fancy}
+\fancyhf{}
+
+
+\rhead{ {\it ouertani@gmail.com}\\{\it p. \thepage} }
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+
+\thispagestyle{empty} % this page has no header
+\maintitle{Slim Ouertani}{June-81, Tunisian} %{Last update on \today}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\begin{center}
+\sbull \href{mailto:ouertani.at.gmail.dot.com}{ouertani\mbox{}@\mbox{}gmail.com}\sbull
+\textsmaller{00966583012381} \sbull
+{ Riyadh} \emph{(Saudi Arabia)}
+
+\textsmaller {\sbull
+\href{http://linkedin.com/in/ouertani }{linkedin.com/in/ouertani }\sbull
+\href{http://ouertani.github.io }{ouertani.github.io }\sbull
+ \href{https://www.infoq.com/profile/Slim-Ouertani/i }{infoq.com/profile/Slim-Ouertani/ }\sbull
+\href{http://twitter.com/ouertani }{twitter.com/ouertani }
+}
+\\
+\vspace{5mm}
+\Large CTO - CIO \\
+\end{center}
+
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Summary}  % a root section title
+
+
+\vspace{-1.3em}  % some vertical spacing
+\begin{multicols}{2}  % open a multicolumn environment
+\hspace{0.5cm} Slim Ouertani is enterprise architect, InfoQ-Fr editor, Big Data Science, Cloud and SOA Certified trainer, founder and organizer of Riyadh IT Architecture Meetup.
+After his engineer's degree in computer science, Slim spent over than 16 years in multinational companies such as Orange, Sagem, and GE as architect, international agile coach and Head of IT development department.
+His main role was to build, design and collaborate in the development of enterprise solutions.
+
+\hspace{0.5cm} Slim regularly contributes to InfoQ-FR community where he is the author of many articles and news.
+He's broad certified as in addition to his SOA, Cloud and Big Data Science certifications: Trainer, Architect \& Engineer, Slim  holds multiple certifications including Togaf 9, Archimate 2, IT4IT, SABSA, PMP, ITIL, CMMi, Mongo, Spring, JAVA, SCALA and reactive programming...
+
+\hspace{0.5cm} Slim enjoys open source contribution and invite you to follow him on twitter @ouertani.
+
+
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Experience}
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://nomd.sa/}{Nomd}}
+  {\textsc{Riyadh, SAUDI ARABIA}} 
+  {%
+    \headedsubsection
+    {CTO}
+    {04-2020 -- present}
+    
+      {\begin{itemize} \itemsep -2pt  % reduce space between items
+      \item Setting a vision for how technology will be used in the group.
+       \item Ensuring that the technological resources meet the company's short and long-term needs.
+       \item Outline the goals for research and development.
+      \item Creating timelines for the development and deployment of all technological services.
+      \item Making executive decisions on behalf of the company's technological requirements.
+      \item Ensuring all technology practices adhere to regulatory standards.
+      \item Managing technology budgets and time frames.
+ \end{itemize}}
+    
+ }
+
+  
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{https://www.ge.com/digital/}{GE Digital}}
+  {\textsc{Riyadh, SAUDI ARABIA}} 
+  {%
+    \headedsubsection
+    {Senior Architect}
+    {06-2019 -- 03-2020}
+    
+      {\begin{itemize} \itemsep -2pt  % reduce space between items
+      \item Drive growth, improve efficiency and customer satisfaction in the health care digital transformation journey
+      \item Direct and manage different consultation technology companies for digital transformation project ( 100+ million usd )
+      \item Architecture lead for Mawid V2 Service
+      \item Ensuring that IT contracts and service levels are negotiated in line with all strategic aims and financial constraints.
+      
+ \end{itemize}}
+    
+  }
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://machinestalk.com/}{machinestalk}}
+  {\textsc{Riyadh, SAUDI ARABIA}} 
+  {%
+    \headedsubsection
+    {CTO}
+    {03-2017 -- 05-2019}
+    
+      {\begin{itemize} \itemsep -2pt  % reduce space between items
+      \item Key contributor in the company transformation to be top ranked IoT service provider kingdom wide
+      \item Create and direct a development center in Tunisia (35 engineers + Administrative staff) 
+      \item Set a strategy and direction for the technology and IT departments
+      \item Created development, quality assurance, and implementation methodologies, processes and teams to support demanding customer base and highly aggressive business goals.
+      \item Teams restructure making sure the staff have clear areas of responsibility and lines of ownership
+      \item Responsible of the technology strategy implementation     
+      \item  Responsible of building and implementing the new IoT framework.
+      \item Supervise system infrastructure to ensure functionality and efficiency
+      \item Build quality assurance and data protection processes.
+ \end{itemize}}
+    
+  }
+
+
+\headedsection  % sets the header for the section and includes any subsections
+  {\href{http://www.elm.sa/en/Pages/default.aspx}{Al-Elm Information Security}}
+  {\textsc{Riyadh, SAUDI ARABIA}} {%
+  \headedsubsection
+    {Solution Architect}
+    {06-2014 -- 03-2016}
+    {\begin{itemize} \itemsep -2pt  % reduce space between items
+ \item  Member/Founder of ELM Development Architecture Center of Excellence.
+ \item EPG committee member, responsible of  the architecture models, oversee the process architecture, approve it and ensuring the process improvement.
+ \item Architecting and Designing enterprise solutions using diverse technology stack
+ \item Work with peers to conduct Solution Architecture Reviews for a broad set of projects
+ \item  Review and provide input into functional \& non-functional requirements
+ \item  Provide consulting and conduct reviews through the development lifecycle
+ \item  Defining the Architecture and guiding the use of various tools, technologies and techniques in the realization of that Architecture:
+ \begin{itemize} \itemsep -2pt 
+ \item HIS system architecture, SDP, WASL,..
+ \item EA Riyadah, API GWT, Microservices...
+\end{itemize}
+ \item  Create and maintain a set of standard practices, patterns and anti-patterns and ensure the appropriate usage of that.
+ \end{itemize}}
+}
+
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{http://www.sofrecom.com/en}{Sofrecom} (Orange FT Group)}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Software Architect, International Agile Coach}
+    {03-2013 -- 06-2014}
+    {
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Manage and direct virtual distributed teams
+\item Make or Buy Analysis
+\item Establish regular meetings to review technical designs and provide mentoring and guidance
+\item Mentor development teams on different architecture and design paradigms or practices
+\item Maintain a knowledge base of emerging technologies and products
+\item Scrum Master, Enterprise Architect
+\end{itemize}
+}}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{http://www.zenika.com/}{Zenika} }
+  {\textsc{Paris, FRANCE}} {%
+  \headedsubsection
+    {JEE Architect}
+    {12-2012 -- 03-2013}
+    {
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Client : Bouygues Telecom
+\item Project : Home Automation (2 months)
+\item BBox embedded automation solution communicating with centralized system
+\\
+\item Client : SwissPost
+\item Project : Image Plus (2 months)
+\item Online outsourcing solution for picture processing.
+
+\end{itemize}}
+}
+
+\headedsection  % sets the header for a subsection and contains usually body text
+  {\href{http://www.orange.tn/}{Orange} }
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    { Head of Development and Tools Manager}
+    {01-2010 -- 11-2012}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+
+\item Architecture, development and implementation of a web service platform:
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item IN/AIR, BSCS/CMS/Data Charging/CRM/IVR/USSD
+\end{itemize}
+\item Development of the “after sales service” solution
+\item Launch of BI departement
+\item Different applications: inter systems and synchronization platforms, web application...
+\end{itemize}}}
+}
+
+
+\headedsection
+  {\href{http://www.sagemcom.com/}{Sagem Software \& Technologies}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Solution Architect}
+    {06-2009 -- 01-2010}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Architecture design and integration of a communication server and administration of remote gateways.
+\end{itemize}}}
+
+  \headedsubsection
+    {Solution Architect}
+    {03-2008 -- 06-2009}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Modular OSGi Server architecture under Linux platform responsible for controlling and interacting with electricity counters in order to retrieve statistics and have data storing/manipulation via different technologies and frameworks
+\begin{itemize} \itemsep -2pt  % reduce space between items
+\item DISTRIBUTED COMPUTING, Cryptography
+\end{itemize}
+\end{itemize}}}
+
+  \headedsubsection
+    {Solution Architect \& Team Leader}
+    {12-2007 -- 03-2008}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Designing an SOA architecture and implementation of an Intranet service for human resources.
+\end{itemize}}}
+}
+
+\headedsection
+  {\href{http://www.st.com/}{STMicroelectronics}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Coordinator}
+    {02-2006 -- 12-2007}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Implementing Intranet tools used for monitoring the evolution of validation campaigns.
+\end{itemize}}}
+
+  \headedsubsection
+    {Developer}
+    {12-2005 -- 02-2006}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item Validating processors and compilers under different platforms.
+\end{itemize}}}
+}
+
+\headedsection
+  {\href{https://www.sungard.com}{ GL TRADE}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Developer  \& designer}
+    {08-2005 -- 12-2005}
+    {\bodytext{\begin{itemize} \itemsep -2pt  % reduce space between items
+\item GL TACTICS: A trader module enhancing the efficiency of the negotiating teams giving them the possibility to customize the implementation strategies and accelerate the decision process.
+\end{itemize}}}
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/ouertani}{Linked-in profile} for a more complete list of work experiences along with recommendations.}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{Certificate}
+
+\headedsection
+  {{\sl \textit {IT4IT},} Open Group}
+  {\textsc{Score 92\%, 12-2016}}
+
+\headedsection
+  {{\sl \textit {SABSA Charted Architect},} SABSA }
+  {\textsc{11-2016}} 
+  
+\headedsection
+  {{\sl \textit {Big Data Science Trainer},} Arcitura }
+  {\textsc{09-2016}} 
+  
+\headedsection
+  {{\sl \textit {Big Data Science Engineer},} Arcitura }
+  {\textsc{With Honors, 08-2016}} 
+
+\headedsection
+  {{\sl \textit {Big Data Professional},} Arcitura }
+  {\textsc{With Honors, 05-2016}} 
+  
+\headedsection
+  {{\sl \textit {Archimate Certified},} Open Group}
+  {\textsc{Score 82\%, 02-2016}}
+
+\headedsection
+  {{\sl \textit {Archimate Foundation},} Open Group}
+  {\textsc{Score 97\%, 02-2016}}
+  
+\headedsection
+  {{\sl \textit {Cloud Trainer},} Arcitura}
+  {\textsc{ 10-2015}}  
+
+\headedsection
+  {{\sl \textit {Cloud Architect},} Arcitura }
+  {\textsc{With Honors, 10-2015}} 
+
+\headedsection
+  {{\sl \textit {Cloud Professional},} Arcitura }
+  {\textsc{With Honors, 09-2015}} 
+
+
+\headedsection
+  {{\sl \textit {Togaf Certified},} Open Group}
+  {\textsc{Score 90\%, 06-2015}} 
+
+\headedsection
+  {\sl \textit{ITIL Foundation}, Exin}
+  {\textsc{Score 95\%, 06-2015}}   
+  
+\headedsection
+  {{\sl \textit {Togaf Foundation},} Open Group}
+  {\textsc{Score 95\%, 04-2015}}     
+
+\headedsection
+  {{\sl \textit {Project Management Professional},} PMI}
+  {\textsc{03-2015}} 
+
+\headedsection
+  {{\sl \textit {SOA Trainer},} Arcitura}
+  {\textsc{01-2015}}  
+
+\headedsection
+  {{\sl \textit {SOA Architect},} Arcitura}
+  {\textsc{With Honors, 12-2014}}  
+
+\headedsection
+  {{\sl \textit {SOA Professional},} Arcitura}
+  {\textsc{With Honors, 11-2014}} 
+ 
+
+\headedsection
+  {{\sl \textit {Introduction to Cmmi for development},}  Cmmi Institute}
+  {\textsc{ 09-2014}} 
+  
+\headedsection
+  {{\sl \textit {Entrepreneurship for all},} EFFECTUATION, EMLYON}
+  {\textsc{Score 75,8\%, 01-2014}} 
+
+\headedsection
+  {{\sl \textit {Principles of Reactive Programming},} Coursera}
+  {\textsc{Score 97.5\%, 01-2014}} 
+
+\headedsection
+  {{\sl \textit {MongoDB for DBAs},} MongoDB}
+  {\textsc{Score 94\%, 11-2013}} 
+  
+\headedsection
+  {{\sl \textit {MongoDb for java},} MongoDb}
+  {\textsc{Score 95\%, 10-2013}} 
+  
+\headedsection
+  {{\sl \textit {Spring Framework 3},} Pivotal}
+  {\textsc{Score 94\%, 02-2013}} 
+  
+\headedsection
+  {{\sl \textit {Java 6 Programmer Certified Professional},} Oracle}
+  {\textsc{Score 100\%, 08-2012}} 
+  
+\headedsection
+  {{\sl \textit {Team Performance},} STMicroelectronics}
+  {\textsc{04-2007}} 
+
+\headedsection
+  {{\sl \textit {English},} British Council}
+  {\textsc{4B, 02-2007}} 
+  
+\headedsection
+  {{\sl \textit {GL Certified Professional},} GL TRADE}
+  {\textsc{09-2005}} 
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Education}
+
+
+\headedsection
+  {\href{http://www.ensi.rnu.tn/}{ National School of Computer Science}\acr{ENSI}}
+  {\textsc{Tunis,Tunisia}} {%
+  \headedsubsection
+    {Graduation Project in Computer Engineering}
+    {2005}{}
+}
+
+\headedsection
+ {\href{http://www.ensi.rnu.tn/}{ National School of Computer Science }\acr{ENSI}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Engineer Degree in Computer Science}
+    {2002 -- 2005} {}
+}
+
+
+
+\headedsection
+  {\href{http://www.ipeit.rnu.tn/en}{Tunis Preparatory Institute for Engineering Studies}\acr{IPEIT}}
+  {\textsc{Tunis, Tunisia}} {%
+  \headedsubsection
+    {Preparatory Courses (Math Sup, Math Spe)}
+    {2000 -- 2002} {}
+}
+
+\headedsection
+  {{Hannibal}}
+  {\textsc{Ariana, Tunisia}} {%
+  \headedsubsection
+    { \textnormal{~(Pre-university Secondary Education)}}
+    {1994 -- 2000} {}
+}
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Other Activities}
+\begin{multicols}{2}
+
+{\bf  InfoQ Fr Editor} \\
+\url{http://www.infoq.com/fr/author/Slim-Ouertani} 
+
+\columnbreak
+
+
+{\bf Founder \& Organizer} \\
+Riyadh IT Architecture Meetup\\
+\url{http://www.meetup.com/Riyadh-IT-Architecture}\\
+ 
+
+
+\end{multicols}
+
+\begin{multicols}{2}
+{\bf  BLOGGGING } \\                                   
+\url{http://java.dzone.com/users/slim.ouertani}  \\          
+\url{http://ouertani.github.io}     \\                     
+\url{http://www.jroller.com/ouertani}  \\                    
+\url{http://twitter.com/ouertani}                         
+
+\columnbreak
+{\bf INTERVIEW } \\
+{\sl Paremus, SCA with OSGI,} {\bf David Savage}  \\
+\url{http://www.prosyst.com/} \\
+07.02.2009 \\
+\url{http://goo.gl/H5yJzY}
+\end{multicols}
+
+
+\begin{multicols}{2}
+{\bf  MAGAZINE} \\
+{\sl From Microservices to SOA} -  20.07.2015 \\
+Service Technology Magazine     -  Issue XCI \\
+\url{http://servicetechmag.com/I91/0715-1}  \\
+
+\columnbreak
+
+{\bf STAMPLE } \\
+\url{https://stample.co}\\
+Scala, Akka, Play \\
+ElasticSearch, MongoDb, Amazon S3, GreenCloud
+\end{multicols}
+
+\begin{multicols}{2}
+{\bf  OPEN SOURCE } \\
+\url{https://github.com/ouertani}  \\
+\url{http://www.reactive-streams.org}
+
+{\bf  Arcitura Authorized Training Partner } \\
+\url{http://www.arcitura.com/}  \\
+Big Data Science, Cloud \& SOA
+\end{multicols}
+
+
+\spacedhrule{0em}{-0.4em}
+\roottitle{Publications}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/for-comprehension-sauce-java-8}{ Pour le fun : for-comprehension \`a la sauce Java 8}}
+  {\textsc{23.07.2015}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/vrais-faux-jumeaux}{ Vrais ou Faux Jumeaux ?}}
+  {\textsc{25.11.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/curryfication-java}{ Curryfication Java : methods \& fonctions}}
+  {\textsc{29.07.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/lenses-en-java}{ Des Lenses en Java ?}}
+  {\textsc{30.06.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/compilateur-java}{ Barboter dans le compilateur Java}}
+  {\textsc{02.06.2014}}
+  
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/trampoline-java8}{ Mon Trampoline avec Java 8}}
+  {\textsc{18.04.2014}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/demystifier-iteratees-java}{ Démystifier les iteratees avec Java}}
+  {\textsc{01.11.2013}}
+
+\headedsection
+  {\href{http://www.infoq.com/fr/articles/trio-akka-spring-scala}{ Le Trio : Akka, Spring et Scala}}
+  {\textsc{16.10.2013}}
+
+
+\headedsection
+  {\href{http://blog.zenika.com/index.php?post/2013/02/12/Rest-with-Scala-and-Vert.x}{ Rest with Scala and Vert.x}}
+  {\textsc{18.02.2013}}
+
+\headedsection
+  {\href{http://blog.zenika.com/index.php?post/2013/02/11/fun-with-scala-and-vert-x}{ Fun with Scala and Vert.x}}
+  {\textsc{11.02.2013}}
+  
+\vspace{-0.2em}
+\begin{center}
+  \emph{\small Please refer to my \href{http://www.linkedin.com/in/ouertani}{Linked-in profile} for a more complete list of publications since 2008.}
+\end{center}
+
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{News}
+
+\headedsection
+  {\href{https://www.infoq.com/fr/news/2016/06/archimate-3-0}{Publication de la Nouvelle Spécification d’ArchiMate 3.0}}
+  {\textsc{22.06.2016}}
+
+\headedsection
+  {\href{https://www.infoq.com/fr/news/2016/05/java-ee-anges-gardiens}{Java EE et les Anges Gardiens}}
+  {\textsc{11.05.2016}}
+  
+\headedsection
+  {\href{https://www.infoq.com/fr/news/2016/03/microservice-antipatterns-qcon}{Microservice antipatterns à Qcon London 2016}}
+  {\textsc{14.04.2016}}   
+  
+  
+\headedsection
+  {\href{http://www.infoq.com/fr/news/2015/05/reactive-streams-capped-collecti}{MongoDB : la magie des Reactive-Streams avec les Capped Collections}}
+  {\textsc{21.05.2015}}   
+
+\headedsection
+  {\href{http://www.infoq.com/fr/news/2015/05/api-reactive-streams-1-0}{Publication de l’API Reactive Streams 1.0}}
+  {\textsc{07.05.2015}} 
+
+\headedsection
+  {\href{http://www.infoq.com/fr/news/2015/03/docker-vs-serveurs-app-java}{Docker, le dernier clou dans le cercueil des serveurs d’applications Java ?}}
+  {\textsc{19.03.2015}} 
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Languages}
+\headedsection
+  {\sl English, Arabic, French } 
+  {\textsc{Written \& Spoken}} 
+
+
+
+\end{document}
